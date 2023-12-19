@@ -70,6 +70,9 @@ int main() {
     for (const auto it : vehicles) {
         it->displayInfo();
     }
+    for (const auto* vehicle : vehicles) {
+        delete vehicle;
+    }
 
     return 0;
 }
